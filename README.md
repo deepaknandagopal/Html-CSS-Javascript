@@ -1,2 +1,2 @@
 # Html-CSS-Javascript
-Contains small projects using HTML, CSS and .Javascript
+Contains projects using HTML, CSS and Javascript
