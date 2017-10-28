@@ -1,0 +1,7 @@
+h1,p {text-align: center; color:red}
+#rightSide { left: 50%;
+	border-left: 1px solid black }
+img,div{position: absolute}
+div{
+	width:50%; height:100%
+}

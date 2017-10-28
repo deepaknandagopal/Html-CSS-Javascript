@@ -1,0 +1,85 @@
+<html>
+<head>
+	<meta name="author" content="Deepak Kumar Nandagopal">
+	<link rel="stylesheet" href="style.css">
+	<Title>Dating Website Form</Title>
+</head>
+<body>
+	<h1> Please Enter Your Details For Our Dating Website! </h1>
+	<form method="get" action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data">
+		<fieldset>
+		<legend>Your Face </legend>
+		<label for = "image">Your image:</label>
+		<input type="file" name="image" required><br>
+		<label for = "imagepreview">Image preview:</label>
+		<img id="preview" name="imagepreview" > 
+		</fieldset>
+
+		<fieldset>
+		<legend>Your General Details </legend>
+		<label for = "name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Your full name" required><br>
+		
+		<label for = "gender">Gender:</label>
+		<input type="radio" id="male" name="gender" value="Male" required><label for= "male" id="radios">Male</label>
+		<input type="radio" id="female" name="gender" value="Female" required><label for= "female" id="radios">Female</label><br>
+		
+		<label for = "age">Age:</label>
+		<input type="number" id="age" name="age" placeholder="18" required><br>
+
+		<label for = "dob">Date of birth:</label>
+		<input type="date" id="dob" name="dob"><br>
+		
+		<label for = "color">Favorite color:</label>
+		<input type="color" id="color" name="color" placeholder="Your full name"><br>
+		
+		<label for = "country">Which country:</label>
+		<select id="country" name="country">
+			<option value=""> </option>
+			<option value="UnitedStates"> United States</option>
+			<option value="India">India</option>
+			<option value="Russia">Russia</option>
+			<option value="Canada">Canada</option>
+			<option value="Australia">Australia</option>
+		</select><br>
+		</fieldset>
+
+		<fieldset>
+		<legend>Your indicators </legend>
+		
+		<label for = "height">Height: </label>
+		<label for= "height" id="leftrange"> Short</label>
+		<input type="range" min="0" max="100" id="height" name="height">
+		<label for= "height" id="rightrange"> Tall</label>
+		<br>
+		
+		<label for = "salary">Salary: </label>
+		<label for= "salary" id="leftrange"> Poor</label>
+		<input type="range" min="0" max="100" id="salary" name="salary"> 
+		<label for= "salary" id="rightrange"> Rich</label><br>
+		</fieldset>
+
+		<fieldset>
+		<legend>Your Contact information </legend>
+		<label for = "email">Email:</label>
+		<input type="email" id="email" name="email" required><br>
+		
+		<label for = "tel">Mobile:</label>
+		<input type="tel" id="tel" name="tel"><br>
+		
+		<label for = "address">Address: </label>
+		<textarea id="address" name="address"></textarea><br>
+		
+		<label for = "contact">Methods to contact you: </label>
+		<input type="checkbox" id="email" value="Email"><label for= "email" id="checkboxes">Email</label>
+		<input type="checkbox" id="whatsapp" value="Whatsapp"><label for= "whatsapp" id="checkboxes">Whatsapp</label>
+		<input type="checkbox" id="chat" value="In-app chat"><label for= "chat" id="checkboxes">In-app chat</label><br>
+		
+		</fieldset>
+		
+		<input type="submit">
+	</form>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
+
+</html>
